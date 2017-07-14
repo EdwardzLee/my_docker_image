@@ -221,7 +221,7 @@ EOPHP
 	done
 fi
 
-dl_and_move_plugin "wp-super-cache"
-dl_and_move_plugin "wp-mail-smtp"
+# dl_and_move_plugin "wp-super-cache"
+# dl_and_move_plugin "wp-mail-smtp"
 
 exec "$@"

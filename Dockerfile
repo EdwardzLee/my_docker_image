@@ -7,5 +7,5 @@ RUN touch /usr/local/etc/php/conf.d/upload-limit.ini \
 RUN a2enmod rewrite expires headers
 VOLUME /var/www/html
 COPY docker-entrypoint.sh /usr/local/bin/entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 CMD ["apache2-foreground"]
